@@ -1,20 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import ProductCard from './seller/productCard';
-import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,useRoutes} from 'react-router-dom';
-import Sidebar from './seller/sidebar';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import ProductCard from "./seller/productCard";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+import Sidebar from "./seller/sidebar";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
-
-      <App />  
-    
+    <BrowserRouter>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );
