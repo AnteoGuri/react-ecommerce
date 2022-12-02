@@ -1,0 +1,218 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.cardd{
+    margin: 0px;
+    width: 345px;
+    height: 430px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    text-align:start !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+   margin-left:10px;
+   margin-top: 10px;
+   color: rgba(0, 0, 0, 0.377);
+  overflow: hidden !important;
+   white-space:nowrap !important;
+   text-overflow: ellipsis !important;
+ padding: 10px;
+ position: relative;
+
+
+  
+}
+
+.home-card-image{
+    width: 100%;
+   background-color: white;
+   border-radius: 20px 20px 0 0 ;
+    height: 70%; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    border-radius: 20px !important;
+    margin-bottom: 15px;
+}
+
+
+
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name{
+ 
+   max-width: 300px;
+}
+
+.dash-description{
+    width: 300px!important;
+    
+    word-wrap: break-word!important; 
+   
+}
+
+
+.checked {
+  color: orange;
+}
+
+
+.cardd:hover .card-image,.card:hover .info{   
+    filter: blur(0px) !important;
+}
+
+.cardd h5{
+padding: top 7px;
+font-size: 20px;
+color: black;
+overflow: hidden !important;
+   white-space:nowrap !important;
+   text-overflow: ellipsis !important;
+   font-family:sans-serif
+}
+
+.cardd h4{
+    padding-top: 7px;
+    font-size: 25px;
+    font-weight: 700;
+    color:#088178;
+}
+
+.cardd:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dash-cardd{
+    margin: 0px;
+    width: 345px;
+    height: 430px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    text-align:start !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+   margin-left:10px;
+   margin-top: 10px;
+   color: rgba(0, 0, 0, 0.377);
+  overflow: hidden !important;
+   white-space:nowrap !important;
+   text-overflow: ellipsis !important;
+ padding: 10px;
+ position: relative;
+}
+
+
+
+.cardd .cart{
+    width: 10%;
+    height: 10%;
+    line-height: 40px;
+    border-radius: 50px;
+    /* background-color: #e8f6ea; */
+    font-weight: 500;
+    color: #088178;
+    font-size: 30px;
+/* border: 1px solid #cce7d0; */
+position: absolute;
+bottom: 25px;
+left: 270px;
+cursor: pointer;
+
+}
+
+
+.addCard{
+    
+    position: absolute;
+    text-align: center;
+    background-color: aquamarine;
+border-radius: 10px;
+visibility: visible;
+animation: fadeOut 8s;
+
+
+}
+
+@keyframes fadeOut {
+    from{
+     opacity: 1;
+    }
+to{
+opacity: 0;
+visibility: hidden;
+}
+
+
+}
+
+
+
+.addCard h4{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+
+.cardHidden{
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    background-color: aquamarine;
+border-radius: 10px;
+    visibility: hidden;
+}
+
+@media screen and (max-width:769px) {
+    .cardd{
+        margin: 0px;
+        width: 400px;
+        height: 430px;
+        background-color:rgb(255, 255, 255);
+        border-radius: 20px;
+        align-items: center;
+        text-align:start !important;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+       
+       margin-top: 10px;
+       color: rgba(0, 0, 0, 0.377);
+      overflow: hidden !important;
+       white-space:nowrap !important;
+       text-overflow: ellipsis !important;
+     padding: 10px;
+     position: relative;
+    
+      
+    }
+
+
+    .dash-cardd{
+        margin: 0px;
+        width: 400px;
+        height: 430px;
+        height: fit-content;
+        background-color:rgb(255, 255, 255);
+        border-radius: 20px;
+        align-items: center;
+        text-align:start !important;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+       
+       margin-top: 10px;
+       color: rgba(0, 0, 0, 0.377);
+      overflow: hidden !important;
+       white-space:nowrap !important;
+       text-overflow: ellipsis !important;
+     padding: 10px;
+     position: relative;
+    
+      
+    }
+
+
+}

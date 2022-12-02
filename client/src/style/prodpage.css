@@ -1,0 +1,172 @@
+
+body{
+    background-color:aliceblue;
+}
+.prod-page-container{
+    display: flex;
+    margin: auto;
+width: 60%;
+justify-content: space-between;
+justify-items: center;
+border: solid 1px rgba(0, 0, 0, 0.1);
+background-color: #FFFFFF;
+margin-top: 5%;
+
+}
+
+
+.prod-page-image{
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+.prod-info{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+   margin-top: 4%;
+   max-width: 50%;
+   
+}
+
+
+h3{
+    font-weight: 600;
+    
+    white-space: break-spaces;
+   
+    max-width: 100%;
+}
+
+
+.prod-star{
+    font-size: 30px;
+}
+
+.desc-page{
+   color: rgba(0, 0, 0, 0.6);
+   margin-bottom: 3%;
+}
+
+.stock-page{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.button-24 {
+  background: #07e2ff;
+  border: 1px solid #07e2ff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #07e2ff;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+
+h4{
+    font-weight: 600;
+}
+
+.add-alert{
+    position: absolute;
+    text-align: center;
+    display: block;
+    margin-left: 8%;
+    margin-top:9%;
+    color: rgb(0, 128, 0);
+    background-color: rgba(0,128,0,0.5);
+    padding: 7px;
+    border-radius: 10px;
+    border: solid 1px rgba(0,128,0,0.3);
+    animation: fadeOut 8s;
+
+    
+}
+@media screen and (max-width:769px) {
+    .prod-page-container{
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+    justify-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    max-height: 100vh;
+    margin-top: 5%;
+   border-radius: 10px;
+    }
+    .prod-img-wrapper{
+        align-self: center;
+
+    }
+    .prod-info{
+    
+        display: flex;
+      
+        align-items: center!important;
+        text-align: center;
+       margin-top: 4%;
+       max-width: 100%!important;
+       
+    }
+    h3{
+        font-weight: 600;
+        
+        white-space: none!important;
+       
+       
+    }
+    .desc-page{
+       text-align: left;
+        margin-bottom: 3%;
+        font-size: 20px;
+     }
+}
+
+
+@keyframes fadeOut {
+    from{
+     opacity: 1;
+    }
+to{
+opacity: 0;
+visibility: hidden;
+}
+
+}
+
+

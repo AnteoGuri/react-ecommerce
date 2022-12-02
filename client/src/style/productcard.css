@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+.prodPage{
+    background-color:rgb(255, 255, 255);
+    height: 100vh;
+}
+.card{
+    margin: 0px;
+    width: 345px;
+    height: 500px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    text-align:center;
+ 
+   margin-left:10px;
+   margin-top: 10px;
+   color: rgba(0, 0, 0, 0.377);
+  overflow: hidden;
+   white-space:nowrap;
+   text-overflow: ellipsis;
+ 
+    
+
+  
+}
+
+.card-image{
+    width: 100%;
+   background-color: white;
+   border-radius: 20px 20px 0 0 ;
+    height: 70%; 
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name{
+ 
+   max-width:100%;
+   white-space: none;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+
+.icons{
+    display: flex;
+    justify-content:space-between;
+    z-index: 1;
+    visibility: hidden;
+    position:relative; 
+  cursor: pointer;
+   top:190px
+
+}
+.edit{
+    margin-left: 30px;
+}
+    
+.card:hover .icons{
+visibility: visible;
+}
+
+.card:hover .card-image,.card:hover .info{   
+    filter: blur(4px);
+}
+
+
+
+
+
+@media screen and (max-width:450px){
+
+    .card-image{
+        width: 100%;
+       background-color: white;
+       border-radius: 20px 20px 0 0 ;
+        height: 50%; 
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+       
+    }
+    .card{
+        height: fit-content;
+        max-height: 440px;
+       
+    }
+
+}

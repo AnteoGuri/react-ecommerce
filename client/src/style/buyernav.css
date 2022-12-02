@@ -1,0 +1,152 @@
+.nav{
+    width: 100%;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    background-color: #43ABC9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    color: white;
+   
+    position: sticky;
+}
+.landingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav-icon{
+font-size: 50px;
+
+}
+
+.cartCount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   top: -10px;
+    text-align: center;
+    position: absolute;
+    font-size: 13px;
+   right: 0px;
+   background-color: red;
+   border-radius:50%;
+   background-size: contain;
+   width: 25px;
+   height: 25px;
+
+}
+
+
+
+.nav-right{
+    display: flex;
+}
+
+.mobile{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#navbarr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0!important;
+
+}
+
+ li{
+    list-style: none;
+    padding:0 30px;
+    position: relative;
+}
+
+
+
+.cartLink{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+
+}
+
+.cartLink:hover,
+.cartLink.active{
+    color:aquamarine;
+}
+
+.cartLink:hover::after,
+.cartLink.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+}
+
+
+
+@media screen and (max-width:769px){
+    #navbarr{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0!important;
+        position: fixed;
+        top: 70px;
+        right: -300px;
+        max-width: 300px;
+        height: 100vh;
+        background-color: rgb(74, 61, 255);
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 40px 0 0 10px;
+       
+        transition: 0.3s ease-in-out;
+       
+    }
+
+    #navbarr.active{
+       right: 0;
+       width: 300px;
+       
+       
+    }
+
+    .mobile{
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cartLink{
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease-in-out;
+        font-size: 20px;
+        
+    
+    }
+    #navbarr li{
+        margin-bottom: 35px;
+        cursor: pointer;
+    }
+}

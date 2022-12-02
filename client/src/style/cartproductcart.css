@@ -1,0 +1,413 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color:"#43ABC9";
+}
+
+
+
+.cartCard{
+   display: flex;
+   justify-content: center;
+    margin: 0px;
+   max-width: 95%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    text-align:start ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+   margin-top: 20px;
+   margin-bottom: 20px;
+   color: rgba(0, 0, 0, 0.377);
+  overflow: hidden ;
+   white-space:nowrap;
+   text-overflow: ellipsis ;
+ padding: 10px;
+ position: relative;
+
+  
+}
+
+.cartcard-image{
+    height: 80%; 
+    width: 90%;
+   background-color: white;
+   border-radius: 20px 20px 0 0 ;
+    flex:1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    border-radius: 20px !important;
+    margin-bottom: 15px;
+    min-width: 150px;
+}
+
+.photoWrapper{
+    flex:2;
+}
+
+.infoWrapper{
+    flex: 11;
+}
+
+.description{
+    word-wrap: break-word;
+    white-space: initial;
+    color: black;
+}
+
+
+
+.checked {
+  color: orange;
+}
+
+.closeicon{
+    position: absolute;
+    left: 97%;
+    top: 5%;
+    color: rgb(255, 75, 75);
+    cursor: pointer;
+}
+
+
+.cartCard h3{
+padding: top 7px;
+font-size: 30px;
+color: black;
+overflow: hidden !important;
+   white-space:nowrap !important;
+   text-overflow: ellipsis !important;
+   font-family:sans-serif;
+   font-weight: 600;
+}
+
+.cartCard h4{
+    padding-top: 7px;
+    font-size: 25px;
+    font-weight: 700;
+    color:#088178;
+}
+
+
+
+.checkoutBtn{
+    position: absolute;
+    left: 90%;
+    bottom: 15%;
+
+  background: #00b7ff;
+  border: 1px solid #00b7ff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+
+
+.cartPopUp{
+    position: fixed;
+    z-index: 10;
+   
+    height:80%;
+    background-color: rgb(217, 247, 255);
+    
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.confirmBtn{
+    background: #00b7ff;
+  border: 1px solid #00b7ff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.cartPopUp{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cartPopUp input{
+margin-bottom: 10px;
+}
+
+.cartpopuphidden{
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+   
+    height:80%;
+    background-color: rgb(217, 247, 255);
+    
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+@media screen and (max-width:769px)and (min-width: 400px){
+    .cartCard{
+      max-width: 90%;
+      height: 100%!important;
+    }
+
+   .cartname{
+    max-width: 380px;
+   }
+
+   .description{
+    word-wrap: break-word;
+    white-space: initial;
+    color: black;
+    font-size: 15px;
+    width: 400px;
+}
+.closeicon{
+  position: absolute;
+  left: 90%!important;
+  top: 5%;
+  color: rgb(255, 75, 75);
+  cursor: pointer;
+}
+
+
+.cartCard h3{
+padding: top 7px;
+font-size: 30px;
+color: black;
+overflow: hidden !important;
+ white-space:nowrap !important;
+ text-overflow: ellipsis !important;
+ font-family:sans-serif;
+ font-weight: 600;
+}
+
+.cartCard h4{
+  padding-top: 7px;
+  font-size: 25px;
+  font-weight: 700;
+  color:#088178;
+}
+
+
+
+.checkoutBtn{
+  position: absolute;
+  left: 80%!important;
+  bottom: 15%;
+
+background: #00b7ff;
+border: 1px solid #00b7ff;
+border-radius: 6px;
+box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+font-size: 16px;
+font-weight: 800;
+line-height: 16px;
+min-height: 40px;
+outline: 0;
+padding: 12px 14px;
+text-align: center;
+text-rendering: geometricprecision;
+text-transform: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.cartcard-image{
+  height: 80%; 
+  width: 90%;
+ background-color: white;
+ border-radius: 20px 20px 0 0 ;
+  flex: 1 !important;;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    border-radius: 20px !important;
+  margin-bottom: 15px;
+  min-width: 150px;
+
+
+
+}
+
+}
+
+
+
+
+@media screen and (max-width:399px){
+  .cartCard{
+    max-width: 90%;
+    height: 100%!important;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+ .cartname{
+  max-width: 300px;
+ }
+
+ .description{
+  word-wrap: break-word;
+  white-space: initial;
+  color: black;
+  font-size: 10px;
+  width: 90%;
+}
+.closeicon{
+position: absolute;
+left: 85%!important;
+top: 5%;
+color: rgb(255, 75, 75);
+cursor: pointer;
+
+}
+
+
+.cartCard h3{
+padding: top 7px;
+font-size: 20px!important;
+color: black;
+overflow: hidden !important;
+white-space:nowrap !important;
+text-overflow: ellipsis !important;
+font-family:sans-serif;
+font-weight: 600;
+}
+
+.cartCard h4{
+padding-top: 7px;
+font-size: 25px!important;
+font-weight: 700;
+color:#088178;
+}
+
+
+
+.checkoutBtn{
+position: absolute;
+
+left: 75%!important;
+bottom: 5%!important;
+
+background: #00b7ff;
+border: 1px solid #00b7ff;
+border-radius: 6px;
+box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+font-size: 16px;
+font-weight: 800;
+line-height: 16px;
+min-height: 40px;
+outline: 0;
+padding: 12px 14px;
+text-align: center;
+text-rendering: geometricprecision;
+text-transform: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.cartcard-image{
+height: 80%; 
+width: 90%;
+background-color: white;
+border-radius: 20px 20px 0 0 ;
+flex: 1 !important;;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    border-radius: 20px !important;
+margin-bottom: 15px;
+min-width: 150px;
+}
+.photoWrapper{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+}
+
